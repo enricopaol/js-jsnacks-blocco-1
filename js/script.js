@@ -21,7 +21,6 @@ varietaZucchina = [
     'Zucchina Crookneck'
 ];
 
-
 // Creo 10 oggetti zucchina e li metto in un array
 arrayZucchine = [];
 for(var i = 1; i <= 10; i++) {
@@ -34,7 +33,19 @@ for(var i = 1; i <= 10; i++) {
     arrayZucchine.push(zucchina);
 
 }
+
 console.log(arrayZucchine);
+
+// Calcolo la somma dei pesi delle zucchine
+var sommaPeso = 0;
+for(var j = 0; j < arrayZucchine.length; j++) {
+    var thisZucchina = arrayZucchine[j];
+    
+    sommaPeso = sommaPeso + thisZucchina.peso;
+}
+console.log('Totale peso zucchine:', sommaPeso + ' g');
+
+
 
 // Crea 10 oggetti che rappresentano una zucchina.
 // Dividi in due array separati le zucchine che misurano meno o più di 15cm. Infine stampa separatamente
