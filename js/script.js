@@ -33,23 +33,24 @@ for(var i = 1; i <= 10; i++) {
     arrayZucchine.push(zucchina);
 
 }
-
 console.log(arrayZucchine);
 
-// Calcolo la somma dei pesi delle zucchine
-var sommaPeso = 0;
-for(var j = 0; j < arrayZucchine.length; j++) {
-    var thisZucchina = arrayZucchine[j];
-    
-    sommaPeso = sommaPeso + thisZucchina.peso;
-}
-console.log('Totale peso zucchine:', sommaPeso + ' g');
 
+// Clacolo la somma del peso delle zucchine
+console.log(calcolaPeso(arrayZucchine, 'peso'));
+
+// Creo due array per le zucchine lunghe meno di 15cm e quelle più lunghe di 15cm
+var zucchineLunghe = [];
+var zucchineCorte = [];
 
 
 // Crea 10 oggetti che rappresentano una zucchina.
 // Dividi in due array separati le zucchine che misurano meno o più di 15cm. Infine stampa separatamente
 // quanto pesano i due gruppi di zucchine.
+
+for(var z = 0; z < arrayZucchine.length; z++) {
+
+}
 
 
 
@@ -63,4 +64,18 @@ function getRandomItem(array) {
 // Get random number integer 
 function getRandomInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
-  }
+}
+
+
+// Creo una funzione per calcolare il peso delle zucchine.
+// Riceve un array di oggetti e una loro proprietà sotto forma di stringa (la proprietà ha valore numerico).
+// Faccio la somma dei valori di quella proprietà e ritorno il valore Totale.
+function calcolaPeso(array, proprieta) {
+    var somma = 0;
+    for(var j = 0; j < array.length; j++) {
+        var thisItem = array[j];
+        
+        somma = somma + thisItem[proprieta];
+    }
+    return somma;
+}
