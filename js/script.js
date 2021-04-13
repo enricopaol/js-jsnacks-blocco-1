@@ -58,7 +58,7 @@ for(var z = 0; z < arrayZucchine.length; z++) {
 
 // Stampo zucchine e relativo peso:
 // Lunghe
-console.log('Zucchine Lunghe:', zucchineLunghe, );
+console.log('Zucchine Lunghe:', zucchineLunghe);
 console.log('Peso totale zucchine lunghe:', calcolaPeso(zucchineLunghe, 'peso'), 'g');
 // Corte
 console.log('Zucchine Corte:', zucchineCorte);
