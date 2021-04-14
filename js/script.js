@@ -73,12 +73,12 @@ console.log('Peso totale zucchine corte:', calcolaPeso(zucchineCorte, 'peso'), '
 // Get a random varietaZucchina from array
 function getRandomItem(array) {
     return array[Math.floor(Math.random() * array.length)];
-};
+}
 
 // Get random number integer 
 function getRandomInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
-};
+}
 
 
 // Creo una funzione per calcolare il peso delle zucchine.
@@ -92,4 +92,4 @@ function calcolaPeso(array, proprieta) {
         somma = somma + thisItem[proprieta];
     }
     return somma;
-};
+}
